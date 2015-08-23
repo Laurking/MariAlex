@@ -136,12 +136,10 @@ $(function(){
 		});
 	});
 
-	$('#programs .programs section a').hover(function(){
-		var src=$(this).children('img').attr('src');
-		var language=src.substring(findBackSlashIndex(src)+1,findPeriodIndex(src));
-		var describe=description(language);
-		$('#description p').html(describe);
-		$('#description p').append('. <span><a href="#">learn more...</a></span>');
+	$('#page-header nav ul li').click(function(){
+
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
 	});
 
 	$('#description p').hover(function(){
@@ -181,9 +179,15 @@ $(function(){
 
 	});
 
+	$('#programs .programs section a').hover(function(){
+		var src=$(this).children('img').attr('src');
+		var language=src.substring(findBackSlashIndex(src)+1,findPeriodIndex(src));
+		var describe=englishDescription(language);
+		$('#description p').html(describe);
+		$('#description p').append('. <span><a href="#">learn more...</a></span>');
+	});
 
-
-	function description(language){
+	function englishDescription(language){
 		switch(language){
 			case "java":
 				return "Java is a programming language and computing platform first released by Sun Microsystems in 1995. There are lots of applications and websites that will not work unless you have Java installed, and more are created every day. Java is fast, secure, and reliable. From laptops to datacenters, game consoles to scientific supercomputers, cell phones to the Internet, Java is everywhere!";

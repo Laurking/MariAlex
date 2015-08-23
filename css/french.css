@@ -317,21 +317,23 @@ img{
 	font-size: 1.5em;
 	background-color: red;
 }
-#quick-registration h3{
+/*#quick-registration h3{
 	padding: .5em;
 	font-size: 1.4em;
-}
-#quick-registration form{
+}*/
+/*#quick-registration form{
 	width: 70%;
 	padding: 1em;
 	margin: 0 auto;
 	margin-bottom: 2em;
 	background-color: white;
-}
+}*/
 #quick-registration form input{
 	font-size: 1.5em;
 	padding-left: .1em;
 	outline: none;
+	border:2px solid black;
+	border-right: none;
 }
 #quick-registration form button{
 	padding: .2em;
@@ -341,6 +343,8 @@ img{
 	border:transparent;
 	outline: none;
 	color: white;
+	border:3px solid black;
+	border-left: 1px solid black;
 }
 footer{
 	clear: both;
@@ -414,10 +418,39 @@ footer .wrapper{
 .loveIt{
 	background-color: pink;
 }
+
+@media only screen and (max-width:529px){ 
+
+	#quick-registration h3{
+	padding: .5em;
+	font-size: 1em;
+}
+
+	#quick-registration form{
+	width: 70%;
+	padding: .2em;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	background-color: white;
+}
+	
+}
 @media only screen and (min-width:530px){ 
 
 	footer .footer-header section h2{
-	font-size: 1.5em;
+		font-size: 1.5em;
+	}
+
+	#quick-registration h3{
+	padding: .5em;
+	font-size: 1.4em;
+	}
+	#quick-registration form{
+		width: 70%;
+		padding: 1em;
+		margin: 0 auto;
+		margin-bottom: 2em;
+		background-color: white;
 	}
 }
 @media only screen and (min-width:768px){
