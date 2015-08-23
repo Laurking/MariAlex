@@ -1,0 +1,484 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     padding: 0px;
+     margin: 0px;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+	font-family:Times New Roman sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.desktop{
+	display: none;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+#page-header{
+	width: 100%;
+	color: black;
+	/*background-color:#19579E;*/
+	background-color: black;
+	border-bottom: 3px solid white;
+	overflow: hidden;
+}
+#page-header nav,.logo,.search,.connect{
+	height: 75px;
+	float: left;
+}
+#page-header nav{
+	width: 15%;
+	font-size: 3em;
+	padding: .2em;
+	padding-top: 0px;
+	color: white;
+}
+#page-header nav h2{
+	cursor: pointer;
+}
+#page-header nav ul{
+	width: 6em;
+	border-top: 5px solid white;
+	margin-left: -.2em;
+	margin-top: -.3em;
+	font-size: .6em;
+	position: absolute;
+	background-color: red;
+	display: none;
+}
+#page-header nav ul li{
+	border:2px solid black;
+	cursor: pointer;
+	border-bottom: 1px solid white;
+	padding-left: 1em;
+}
+#page-header nav ul li:hover{
+	background-color: green;
+}
+#page-header nav  ul li a{
+	text-decoration: none;
+	color: black;
+}
+.logo{
+	width: 60%;
+	padding: .7em;
+}
+.search{
+	width: 15%;
+	padding: .5em;
+	text-align: center;
+}
+.search form section{
+	position: absolute;
+	width: 14.8em;
+	margin-top: 5.9em;
+	margin-left: -7em;
+	text-align: center;
+	padding: 1.5em .5em;
+	border:3px solid black;
+	border-top:3px solid white;
+	background-color: red;
+	display: none;
+}
+.search form button{
+	font-size: 4em;
+	cursor: pointer;
+	outline: none;
+	background-color: inherit;
+	border:none;
+}
+.search form section input{
+	font-size: 1em;
+}
+.connect{
+	width: 10%;
+	cursor: pointer;
+	padding:1em .3em;
+}
+.connect ul{
+	width: 15em;
+	float: right;
+	margin-left: -12em;
+	margin-top: .5em;
+	display: none;
+	position: absolute;
+}
+.connect ul li{
+	width: 50%;
+	text-align: center;
+	font-size: 1.5em;
+	cursor: pointer;
+	padding: 1.5em 0em;
+	list-style-type: none;
+	border:2px solid black;
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	background-color: red;
+	float: left;
+}
+.connect ul li a{
+	text-decoration: none;
+	color: white;
+}
+.connect ul li:hover{
+	background-color: green;
+}
+#main{
+	width: 100%;
+	height: 400px;
+	background: url(../img/image5.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 5%;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+#main .adds-board{
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	padding-top: .6em;
+	color: black;
+	font-family: Impact;
+	word-spacing: 1px;
+	font-size: 2.5em;
+	background-color: rgba(255,255,255,.5);
+	/*background-color: white;*/
+
+}
+#main .adds-board p{
+	width: 60%;
+	font-size: .9em;
+	transition:width 200ms;
+}
+#main .adds-board button{
+	padding: .5em;
+	font-size: .7em;
+	background-color: green;
+	color: white;
+}
+#main .listItem{
+	width: 100%;
+	padding-right: 2.5em;
+	margin-top: 25px;
+}
+/*#main .listItem ul{
+	text-align: center;
+	float: right;
+}*/
+#main .listItem ul li{
+	width: 5%;
+	border:3px solid white;
+	border-radius: 100%;
+	list-style-type: none;
+	padding: 5px;
+	margin-right: .5em;
+	float: left;
+}
+#developpers{
+	width: 100%;
+}
+.developpers{
+	width: 100%;
+	padding: .5em;
+}
+.developpers section{
+	width: 100%;
+	padding: .5em;
+	font-family: Impact;
+	text-transform: uppercase;
+	margin-top: .5em;
+	text-align: center;
+	font-size: 2em;
+}
+.developpers section:nth-child(1){
+	background-color: orange;
+}
+.developpers section:nth-child(2){
+	background-color: green;
+}
+.developpers section:nth-child(3){
+	background-color: yellow;
+}
+.developpers section:hover{
+	background-color: #C026E7;
+}
+#social-networks{
+	width: 100%;
+	overflow: hidden;
+	background-color: #bdbdbd;
+	border-top: 10px solid #585858;
+	border-bottom: 10px solid #585858;
+}
+#social-networks section{
+	width: 25%;
+	padding: 2.5em;
+	border-radius: 100%;
+	background-color: #bdbdbd;
+	float: left;
+}
+#social-networks section:hover{
+	background-color: #585858;
+}
+#programs{
+	width: 100%;
+	overflow: hidden;
+	color: white;
+	background-color: #2E2E2E;
+}
+#programs aside{
+	width: 5%;
+	color: white;
+	height: 350px;
+	text-align: center;
+	padding-top: 170px;
+	background-color: #2E2E2E;
+	font-size: 1.5em;
+}
+#programs aside,#programs .programs{
+	float: left;
+}
+#programs aside h2{
+	display: none;
+}
+#programs:hover aside h2{
+	display: block;
+	padding:20px 1px; 
+	cursor: pointer;
+	background-color: black;
+}
+#programs .programs section{
+	width: 33.33%;
+	padding: .5em;
+	float: left;
+	height: 50%;
+	background-color: #bbb;
+}
+#programs .programs{
+	width: 90%;
+	height: 350px;
+	background-color: inherit;
+	
+}
+#description{
+	clear: both;
+	width: 100%;
+	text-align: left;
+	padding-left: 1em;
+	background-color: white;
+	color: black;
+	padding:10px;
+	font-size: 1.3em;
+	font-family: arial;
+}
+#description p{
+	transition:width 500ms;
+	transition:height 200ms;
+}
+#quick-registration{
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+	background-color: #999;
+}
+#quick-registration h2{
+	width: 100%;
+	padding: .2em;
+	font-size: 1.5em;
+	background-color: red;
+}
+#quick-registration h3{
+	padding: .5em;
+	font-size: 1.4em;
+}
+#quick-registration form{
+	width: 70%;
+	padding: 1em;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	background-color: white;
+}
+#quick-registration form input{
+	font-size: 1.5em;
+	padding-left: .1em;
+	outline: none;
+}
+#quick-registration form button{
+	padding: .2em;
+	margin-left: -.6em;
+	font-size:1.35em;
+	background-color: green;
+	border:transparent;
+	outline: none;
+	color: white;
+}
+footer{
+	clear: both;
+}
+footer .footer-header{
+	width: 100%;
+	overflow: hidden;
+	border-top: 5px solid black;
+	border-bottom: 10px solid black;
+}
+footer .footer-header section{
+	width: 50%;
+	float: left;
+	padding-left: .5em;
+	padding-top: 2em;
+	background-color: #CECACA;
+}
+footer .footer-header section h2{
+	text-align: center;
+	color: white;
+	margin-bottom: .5em;
+	background-color: black;
+}
+footer .footer-header section h3{
+	padding-left: 2em;
+	font-size: 1.2em;
+}
+footer .footer-header section h3 a{
+	text-decoration: none;
+	color: black;
+}
+footer .languageSelection{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: Impact;
+	margin-top: .5em;
+}
+footer .languageSelection select{
+	width: 125px;
+	border:5px solid black;
+	outline: none;
+}
+footer .wrapper{
+	margin-top: .5em;
+	background-color: black;
+	padding: 1em;
+	font-size: 1.2em;
+	color: white;
+}
+.inactive{
+	background-color: red;
+	color: black;
+}
+.enable{
+	background-color:blue;
+	color: white; 
+}
+.disable{
+	background-color: black;
+	color: black;
+}
+.active{
+	background-color:red;
+	color: white;
+}
+.visible{
+	display: block;
+}
+.light{
+	background-color: khaki;
+}
+.loveIt{
+	background-color: pink;
+}
+
+@media only screen and (min-width:768px){
+	.mobile{
+		display: none;
+	}
+	.desktop{
+		display: block;
+	}
+	.logo{
+		width: 15%;
+	}
+	#page-header nav{
+		width: 70%;
+		padding-top: .7em;
+		overflow: hidden;
+	}
+	#page-header nav ul{
+		display: block;
+		width: inherit;
+		border:none;
+	}
+	#page-header nav ul li{
+		float: left;
+		list-style-type: none;
+		width: 20%;
+		padding-left: 0em;
+		text-align: center;
+		border-color: black;
+		background-color: red;
+	}
+	.search,.connect{
+		width: 7%;
+	}
+	.connect{
+		margin-left: 1%;
+	}
+
+	#main .adds-board p{
+		width: 30%;
+	}
+	#social-networks{
+		padding-left: 30%;
+	}
+
+	#social-networks section{
+		width: 15%;
+		border-radius: 0px;
+	}
+	.developpers section{
+		width: 50%;
+		float: left;
+	}
+	.developpers section:nth-child(3){
+		width: 100%;
+	}
+	
+	footer .footer-header section{
+		width: 33.33%;
+	}
+
+}
+/*@media screen and (min-device-width: 768px) and (max-device-width: 1000px) { 
+	#social-networks section{
+		width: 50px;
+		margin: 0 auto;
+	}
+}
+*/
