@@ -1,6 +1,8 @@
 $(function(){
 	var counter=-1;
 	var count=-1;
+	var start=0;
+	var end=7;
 	var images=['image1','image2','image6','image7'];
 	var colors=['red','green','purple','orange','yellow','lime'];
 
@@ -113,26 +115,32 @@ $(function(){
 		});
 
 	$('#previous').click(function(){
-
+		
 		$('#programs .programs section').each(function(){
-			if ($(this).index()<=5) {
-				$(this).slideDown();
+			if (end>=4) {
+				start-=7;
+				end-=7;
 			}
 			else{
-				$(this).hide();
+				start=7;
+				end=13;
 			}
+		$(this).slideToggle();
 		});
 	});
 	
 	$('#next').click(function(){
 		
 		$('#programs .programs section').each(function(){
-			if ($(this).index()>5) {
-				$(this).slideDown();
+			if (end>=4) {
+				start-=7;
+				end-=7;
 			}
 			else{
-				$(this).hide();
+				start=7;
+				end=13;
 			}
+		$(this).slideToggle();
 		});
 	});
 
